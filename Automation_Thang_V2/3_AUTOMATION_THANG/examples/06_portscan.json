@@ -1,0 +1,26 @@
+{
+  "event_id": "06_portscan",
+  "timestamp": "2026-10-01T00:00:00+00:00",
+  "source": "test",
+  "src_ip": "198.51.100.25",
+  "dst_ip": "10.0.30.20",
+  "dst_port": 80,
+  "severity": 12,
+  "event_type": "port_scan",
+  "features": {
+    "failed_logins_60s": 0,
+    "unique_dst_ports_60s": 100
+  },
+  "quality": {
+    "counters": "synthetic",
+    "timestamp": "processing"
+  },
+  "mitre": {
+    "technique_ids": [
+      "T1046"
+    ],
+    "tactics": [],
+    "mapping_source": "none",
+    "validation_status": "proposed"
+  }
+}

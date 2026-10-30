@@ -1,0 +1,2 @@
+De ket noi AI that, trao doi voi Minh va thay 2_AI_MINH/src/app.py bang patch nay.
+API tra raw_anomaly_score va model_version hash. Can independent calibration; chua duoc kiem chung live.

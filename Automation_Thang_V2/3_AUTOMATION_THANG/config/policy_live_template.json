@@ -1,0 +1,26 @@
+{
+  "version": "live-template-replace-before-use",
+  "note": "TEMPLATE ONLY. REPLACE NETWORKS & confirm source inventory with Nam. No live operation until real calibrated AI and explicit approval.",
+  "protected_networks": [
+    "192.168.99.0/24",
+    "192.168.30.0/24",
+    "192.168.10.0/24"
+  ],
+  "auto_block_source_networks": [
+    "REPLACE_WITH_APPROVED_ATTACK_SOURCE_CIDR"
+  ],
+  "auto_block_event_types": [
+    "brute_force",
+    "port_scan"
+  ],
+  "block_ttl_seconds": 300,
+  "max_active_blocks": 20,
+  "ai_weight": 0.7,
+  "alert_threshold": 50,
+  "block_threshold": 80,
+  "min_ai_score_to_block": 0.85,
+  "min_severity_to_block": 10,
+  "max_event_age_seconds": 300,
+  "max_future_skew_seconds": 30,
+  "approval_mode": "manual"
+}

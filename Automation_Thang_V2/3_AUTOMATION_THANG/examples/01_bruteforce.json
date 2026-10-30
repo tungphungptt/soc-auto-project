@@ -1,0 +1,26 @@
+{
+  "event_id": "01_bruteforce",
+  "timestamp": "2026-10-01T00:00:00+00:00",
+  "source": "test",
+  "src_ip": "198.51.100.23",
+  "dst_ip": "10.0.30.20",
+  "dst_port": 22,
+  "severity": 12,
+  "event_type": "brute_force",
+  "features": {
+    "failed_logins_60s": 30,
+    "unique_dst_ports_60s": 1
+  },
+  "quality": {
+    "counters": "synthetic",
+    "timestamp": "processing"
+  },
+  "mitre": {
+    "technique_ids": [
+      "T1110"
+    ],
+    "tactics": [],
+    "mapping_source": "none",
+    "validation_status": "proposed"
+  }
+}

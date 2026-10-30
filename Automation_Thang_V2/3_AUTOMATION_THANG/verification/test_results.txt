@@ -1,0 +1,36 @@
+test_01_block (test_soc.Cases.test_01_block) ... ok
+test_02_observe (test_soc.Cases.test_02_observe) ... ok
+test_03_protected (test_soc.Cases.test_03_protected) ... ok
+test_04_scope (test_soc.Cases.test_04_scope) ... ok
+test_05_duplicate_replay (test_soc.Cases.test_05_duplicate_replay) ... ok
+test_06_changed_event_id_rejected (test_soc.Cases.test_06_changed_event_id_rejected) ... ok
+test_07_invalid_token_schema_extra (test_soc.Cases.test_07_invalid_token_schema_extra) ... ok
+test_08_mitre_fields_and_invalid_id (test_soc.Cases.test_08_mitre_fields_and_invalid_id) ... ok
+test_09_null_counters_fail_review (test_soc.Cases.test_09_null_counters_fail_review) ... ok
+test_10_ttl_expire_mock (test_soc.Cases.test_10_ttl_expire_mock) ... ok
+test_11_allowlist_unblock_direct (test_soc.Cases.test_11_allowlist_unblock_direct) ... ok
+test_12_manual_review_approve (test_soc.Cases.test_12_manual_review_approve) ... ok
+test_13_review_reject (test_soc.Cases.test_13_review_reject) ... ok
+test_14_pending_retry_idempotent (test_soc.Cases.test_14_pending_retry_idempotent) ... ok
+test_15_dry_run_does_not_mutate (test_soc.Cases.test_15_dry_run_does_not_mutate) ... ok
+test_16_wazuh_mitre_metadata_and_time (test_soc.Cases.test_16_wazuh_mitre_metadata_and_time) ... ok
+test_17_wazuh_level_filter (test_soc.Cases.test_17_wazuh_level_filter) ... ok
+test_18_suricata_same_flow_unique_event_ids (test_soc.Cases.test_18_suricata_same_flow_unique_event_ids) ... ok
+test_19_curated_mapping_proposed_not_validated (test_soc.Cases.test_19_curated_mapping_proposed_not_validated) ... ok
+test_20_outbox_persist_and_retry (test_soc.Cases.test_20_outbox_persist_and_retry) ... ok
+test_21_opnsense_fake_transport_verify_and_expire (test_soc.Cases.test_21_opnsense_fake_transport_verify_and_expire) ... ok
+test_22_opnsense_does_not_unblock_unmanaged_alias (test_soc.Cases.test_22_opnsense_does_not_unblock_unmanaged_alias) ... ok
+test_23_real_ai_calibration_contract (test_soc.Cases.test_23_real_ai_calibration_contract) ... ok
+test_24_real_ai_missing_data_refused (test_soc.Cases.test_24_real_ai_missing_data_refused) ... ok
+test_25_live_requires_explicit_opt_in (test_soc.Cases.test_25_live_requires_explicit_opt_in) ... ok
+test_26_http_role_separation (test_soc.Cases.test_26_http_role_separation) ... ok
+test_27_live_must_not_block_test_source (test_soc.Cases.test_27_live_must_not_block_test_source) ... ok
+test_28_bridge_outbox_delivery_metadata (test_soc.Cases.test_28_bridge_outbox_delivery_metadata) ... ok
+test_29_circuit_breaker (test_soc.Cases.test_29_circuit_breaker) ... ok
+test_30_alias_pagination_fails_closed (test_soc.Cases.test_30_alias_pagination_fails_closed) ... ok
+test_31_outbox_collision_deadletter (test_soc.Cases.test_31_outbox_collision_deadletter) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.494s
+
+OK

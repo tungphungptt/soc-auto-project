@@ -1,0 +1,12 @@
+{
+  "version": "lab-mapping-v1",
+  "wazuh_rule_ids": {
+    "5712": {
+      "technique_ids": ["T1110"],
+      "tactics": ["Credential Access"],
+      "validation_status": "proposed",
+      "note": "Review actual Wazuh rule semantics and test SSH brute-force before marking tested"
+    }
+  },
+  "suricata_sids": {}
+}

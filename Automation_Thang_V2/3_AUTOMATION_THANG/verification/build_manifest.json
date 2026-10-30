@@ -1,0 +1,17 @@
+{
+  "source_zip_sha256": "015f5c7cafd8af4f9c5202881e92dd5682caad8758add40653b1bb4a76960964",
+  "test_count": 31,
+  "test_summary": "31 tests passed (Mock, AI contract, MITRE mapping, HTTP, fake OPNsense transport)",
+  "demo_variants": [
+    "mock",
+    "manual_approval",
+    "dry_run"
+  ],
+  "live_opnsense_tested": false,
+  "end_to_end_tested": false,
+  "python_build_version": "3.13.5",
+  "changed_components": [
+    "3_AUTOMATION_THANG/",
+    "2_AI_MINH/src/app.py"
+  ]
+}

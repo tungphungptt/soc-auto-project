@@ -1,0 +1,30 @@
+{
+  "version": "lab-proposal-v1",
+  "note": "ALL IP ranges below are examples, NOT extracted from the supplied topology. Replace with Nam's approved IP plan before integration.",
+  "protected_networks": [
+    "10.10.99.0/24",
+    "10.10.30.0/24",
+    "10.10.20.0/24",
+    "10.10.40.1/32",
+    "10.10.50.1/32",
+    "192.0.2.10/32",
+    "fc00::/7"
+  ],
+  "auto_block_source_networks": [
+    "198.51.100.0/24"
+  ],
+  "auto_block_event_types": [
+    "brute_force",
+    "port_scan"
+  ],
+  "block_ttl_seconds": 300,
+  "max_active_blocks": 20,
+  "ai_weight": 0.7,
+  "alert_threshold": 50,
+  "block_threshold": 80,
+  "min_ai_score_to_block": 0.85,
+  "min_severity_to_block": 10,
+  "max_event_age_seconds": 300,
+  "max_future_skew_seconds": 30,
+  "approval_mode": "auto"
+}

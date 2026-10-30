@@ -1,0 +1,41 @@
+services:
+  ai:
+    build: .
+    command: ["python", "-m", "soclab", "ai", "--host", "0.0.0.0"]
+    environment:
+      SOC_AI_TOKEN: ${SOC_AI_TOKEN:-demo-ai-token}
+    ports:
+      - "127.0.0.1:8001:8001"
+  firewall:
+    build: .
+    command: ["python", "-m", "soclab", "firewall", "--host", "0.0.0.0"]
+    environment:
+      SOC_FIREWALL_TOKEN: ${SOC_FIREWALL_TOKEN:-demo-firewall-token}
+    volumes:
+      - mockdata:/app/data
+    ports:
+      - "127.0.0.1:8002:8002"
+  automation:
+    build: .
+    command: ["python", "-m", "soclab", "automation", "--host", "0.0.0.0"]
+    environment:
+      SOC_AI_MODE: mock
+      SOC_FIREWALL_MODE: mock
+      SOC_AI_URL: http://ai:8001
+      SOC_FIREWALL_URL: http://firewall:8002
+      SOC_AUTOMATION_TOKEN: ${SOC_AUTOMATION_TOKEN:-demo-automation-token}
+      SOC_APPROVER_TOKEN: ${SOC_APPROVER_TOKEN:-demo-approver-token}
+      SOC_AI_TOKEN: ${SOC_AI_TOKEN:-demo-ai-token}
+      SOC_FIREWALL_TOKEN: ${SOC_FIREWALL_TOKEN:-demo-firewall-token}
+      SOC_DRY_RUN: ${SOC_DRY_RUN:-true}
+      SOC_POLICY: /app/config/policy.json
+    volumes:
+      - automdata:/app/data
+    depends_on:
+      - ai
+      - firewall
+    ports:
+      - "127.0.0.1:8000:8000"
+volumes:
+  mockdata:
+  automdata:

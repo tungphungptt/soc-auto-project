@@ -1,0 +1,9 @@
+AI endpoint smoke test in build container (not end-to-end SOC benchmark):
+Python 3.13; scikit-learn 1.8.0, Pydantic 2.13.5.
+GET /health => HTTP 200; model_version iforest-ba886a8d4f73ff4f.
+POST /predict => HTTP 200; raw_anomaly_score 0.03946285409483563,
+ score_semantics higher_is_more_anomalous_raw; is_mock false.
+WARNING: original pickle models were trained using scikit-learn 1.3.2,
+but test container had 1.8.0; this triggered InconsistentVersionWarning.
+Re-test in a pinned environment before claiming reproducible AI metrics.
+This smoke test is not independent calibration or live AI->firewall validation.
